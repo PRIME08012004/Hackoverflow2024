@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Booking Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Service Booking Form</h1>
+        <form id="bookingForm" action="/submit_booking" method="POST">
+            <label for="description">Problem Explanation:</label><br>
+            <textarea id="description" name="description" required></textarea><br><br>
+            
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+            
+            <label for="payment">Payment Method:</label><br>
+            <select id="payment" name="payment" required>
+                <option value="" disabled selected>Select Payment Method</option>
+                <option value="Cash on delivery">Cash on delivery</option>
+                <option value="UPI">UPI</option>
+            </select><br><br>
+            
+            <input type="submit" value="Book Service">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = '/index.html'; 
+        });
+    </script>
+</body>
+</html>
