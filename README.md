@@ -35,3 +35,4 @@ This project aims to provide a convenient platform for users to book various hom
 3. Clone the repository:https://github.com/PRIME08012004/Hackoverflow2024.git
 
 And Your good to go!!
+Presentation:https://docs.google.com/presentation/d/1WKS-TJm2AvBLcC0m7nvpCACVRSYFrTHh/edit?usp=sharing&ouid=105815207839913901328&rtpof=true&sd=true
